@@ -1,0 +1,19 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+#recurly-manager-form .widefat {
+  width: 100%;
+  max-width: 400px;
+}
+
+#recurly-manager-form .recurly-fetch-user-btn {
+  cursor: pointer;
+  background-color: darkgreen;
+  color: #fff;
+  border: 1px solid darkgreen;
+  border-radius: 3px;
+  transform: translate(10px, 0);
+  margin-right: 30px;
+}

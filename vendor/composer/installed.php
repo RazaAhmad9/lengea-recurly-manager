@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => '__root__',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '17bda2c6bd1ad9d9bd93b3c0decad2c0375c78c7',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        '__root__' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '17bda2c6bd1ad9d9bd93b3c0decad2c0375c78c7',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'psr/log' => array(
+            'pretty_version' => '1.1.4',
+            'version' => '1.1.4.0',
+            'reference' => 'd49695b909c3b7628b6289db5479a1c204601f11',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/log',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'recurly/recurly-client' => array(
+            'pretty_version' => '4.54.0',
+            'version' => '4.54.0.0',
+            'reference' => '3091c70763c8918e5da66793f276dd6ef66254cc',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../recurly/recurly-client',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);

@@ -1,0 +1,10 @@
+{
+    "require": {
+        "recurly/recurly-client": "^4.52"
+    },
+    "config": {
+        "platform": {
+            "php": "7.4.0"
+        }
+    }
+}

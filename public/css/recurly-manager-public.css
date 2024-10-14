@@ -1,0 +1,377 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.recurly-form-message-wraper {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.recurly-message {
+  color: #000;
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+.error-message,
+#recurly-errors {
+  background-color: #ff00008e;
+  padding: 3px 6px;
+  font-size: 16px;
+}
+
+.success-message,
+#recurly-success {
+  background-color: #00800069;
+  padding: 3px 6px;
+  font-size: 16px;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form#createAccount,
+form#createNewPurchase {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  flex-basis: 100%;
+  margin-bottom: 20px !important;
+}
+
+.recurly-f50-group {
+  flex-basis: calc(50% - 10px);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px !important;
+  border: 1px solid #ddd !important;
+  border-radius: 4px;
+  box-sizing: border-box;
+  min-height: 40px !important;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: 1px solid #000;
+}
+
+.form-group .half {
+  width: 48%;
+  display: inline-block;
+  margin-right: 2%;
+}
+
+.form-group .half:last-child {
+  margin-right: 0;
+}
+
+.form-group .btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-group .btn:focus {
+  outline: 1px solid #000;
+}
+
+.form-group .btn:hover {
+  background-color: #0056b3;
+}
+
+.recurly-button {
+  background-color: #56c5d0 !important;
+  border: 1px solid #56c5d0 !important;
+  color: #fff !important;
+  padding: 10px 30px !important;
+  border-radius: 30px !important;
+  margin-top: 10px !important;
+  display: inline-block !important;
+  cursor: pointer;
+  font-size: 14px !important;
+  line-height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.recurly-button:hover,
+.recurly-button.recurly-button-upgrade:hover {
+  background-color: #f5bd6f !important;
+  border-color: #f5bd6f !important;
+}
+
+.recurly-button.recurly-button-upgrade {
+  background-color: #000 !important;
+  border-color: #000 !important;
+}
+
+.recurly-button.recurly-button-cancel {
+  background-color: #d27356 !important;
+  border-color: #d27356 !important;
+}
+
+.recurly-button.recurly-button-cancel:hover {
+  background-color: #cb5e3c !important;
+  border-color: #cb5e3c !important;
+}
+
+.recurly-button.recurly-button-view-membership {
+  width: auto !important;
+}
+
+#recurly_user_profile_content h3 {
+  font-size: clamp(1.25rem, 1.125rem + 0.416667vw, 1.5rem);
+}
+
+.recurly-edit {
+  color: #3bb3c2;
+  font-size: clamp(1.0625rem, 1.0625rem + 0vw, 1.0625rem);
+  text-decoration: underline;
+}
+
+.recurly-user-profile-table,
+.recurly-user-profile-table tr td {
+  border: none !important;
+}
+
+.recurly-user-profile-table tr td {
+  padding-left: 0 !important;
+}
+
+tr.recurly-table-row td:first-child {
+  font-weight: 700;
+}
+
+tr.recurly-table-row td:nth-child(2) {
+  color: #707070;
+}
+
+tr.recurly-table-row td:nth-child(3) {
+  text-align: right;
+}
+
+tr.recurly-table-row-subtype td:last-child {
+  text-transform: capitalize;
+}
+
+.recurly-updated {
+  padding: 10px;
+  background: #90ee9085;
+}
+
+#recurly-edit-basic-info-form .acf-fields {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#recurly-edit-basic-info-form .acf-field {
+  border: none;
+  width: calc(50% - 8px);
+  padding: 0;
+}
+
+#recurly-edit-basic-info-form .acf-field input {
+  padding: 10px;
+}
+
+#recurly-edit-basic-info-form .acf-button {
+  background-color: #56c5d0;
+  border-color: #56c5d0;
+  color: #fff;
+  border-radius: 30px;
+}
+
+#recurly-edit-basic-info-form .acf-button:hover {
+  background-color: #f5bd6f;
+  border-color: #f5bd6f;
+}
+
+.recurly-membership-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.recurly-user-greeting small {
+  color: #707070;
+  font-size: 16px;
+}
+
+.recurly-user-greeting p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #56c5d0;
+}
+
+.recurly-membership-body {
+  margin-top: 30px;
+}
+
+.recurly-body-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body .recurly-membership-body h4 {
+  font-size: 18px !important;
+  font-weight: bold !important;
+  text-align: left !important;
+  padding-bottom: 0 !important;
+}
+
+.recurly-renew-cont {
+  text-align: center;
+}
+
+.recurly-renew-cont .form-group {
+  margin: 0 !important;
+}
+
+span.recurly-expiry-date {
+  font-size: 11px;
+  color: #707070;
+  font-style: italic;
+}
+
+#recurly-cancel-subscription-form .recurly-button-cancel {
+  margin-top: 0 !important;
+}
+
+#recurly-cancel-subscription-form .form-group {
+  margin-bottom: 0 !important;
+}
+
+.recurly-button-upgrade {
+  margin-top: 0 !important;
+}
+
+.recurly-credits-wrapper {
+  text-align: center;
+}
+
+.recurly-credits {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 0;
+}
+
+/* Range */
+input#recurly-range {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  width: 100%;
+  cursor: default;
+  outline: none;
+  /*  slider progress trick  */
+  overflow: hidden;
+  /*border-radius: 16px;*/
+}
+
+/* Track: webkit browsers */
+input#recurly-range::-webkit-slider-runnable-track {
+  height: 15px;
+  background: #ccc;
+  /*border-radius: 16px;*/
+}
+
+/* Track: Mozilla Firefox */
+input#recurly-range::-moz-range-track {
+  height: 15px;
+  background: #ccc;
+  /*border-radius: 16px;*/
+}
+
+/* Thumb: webkit */
+input#recurly-range::-webkit-slider-thumb {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  height: 15px;
+  width: 15px;
+  background-color: #56c5d0;
+  border-radius: 0;
+  border: 2px solid #56c5d0;
+  /*  slider progress trick  */
+  box-shadow: -407px 0 0 400px #56c5d0;
+}
+
+/* Thumb: Firefox */
+input#recurly-range::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #56c5d0;
+  /*  slider progress trick  */
+  box-shadow: -407px 0 0 400px #56c5d0;
+}
+
+form#recurly-renew-subscription-form .form-group {
+  margin-bottom: 0 !important;
+}
+
+.recurly-user-profile-table td {
+  padding-right: 0 !important;
+}
+
+td.download-remaining {
+  font-size: 30px;
+}
+
+td.download-file a,
+td.woocommerce-orders-table__cell.woocommerce-orders-table__cell-order-actions
+  a.woocommerce-button.button.view {
+  background: #41c4de !important;
+  border-color: #41c4de !important;
+  color: #fff !important;
+}
+
+td.download-file a:hover,
+td.woocommerce-orders-table__cell.woocommerce-orders-table__cell-order-actions
+  a.woocommerce-button.button.view {
+  border-radius: 5px !important;
+}
+
+.entry-content thead th,
+.entry-content tr th {
+  color: #000 !important;
+}
