@@ -377,25 +377,15 @@ class Recurly_Manager_Admin
 
     public function fetch_user_field_callback()
     {
-        $options = get_option('recurly_manager_option');
-        printf(
-            '<input disabled type="text" id="recurly_manager_fetch_users" name="recurly_manager_option[recurly_manager_fetch_users]" value="users" />',
-            isset($options['recurly_manager_fetch_users']) ? esc_attr($options['recurly_manager_fetch_users']) : ''
-        );
         wp_nonce_field('recurly-fetch-users-action', 'recurly-fetch-users-nonce');
-        echo '<input type="submit" name="recurly-fetch-users" class="recurly-fetch-user-btn button button-primary" value="Fetch"/>';
-        echo '<br/><small>This fetch button will fetch all users from recurly, not checking if it has an active membership.</small>';
+        echo '<input type="submit" name="recurly-fetch-users" class="recurly-fetch-user-btn button button-primary" value="Fetch All Users"/>';
+        echo '<br/><small>This fetch button will fetch all users from recurly, not checking if it has an active membership or not.</small>';
     }
 
     public function fetch_user_with_active_plan_callback()
     {
-        $options = get_option('recurly_manager_option');
-        printf(
-            '<input disabled type="text" id="recurly_manager_fetch_users_with_active_plan" name="recurly_manager_option[recurly_manager_fetch_users_with_active_plan]" value="users" />',
-            isset($options['recurly_manager_fetch_users_with_active_plan']) ? esc_attr($options['recurly_manager_fetch_users_with_active_plan']) : ''
-        );
         wp_nonce_field('recurly-fetch-active-plan-users-action', 'recurly-fetch-active-plan-users-nonce');
-        echo '<input type="submit" name="recurly-fetch-users-with-active-plan" class="recurly-fetch-user-btn button button-primary" value="Fetch"/>';
+        echo '<input type="submit" name="recurly-fetch-users-with-active-plan" class="recurly-fetch-user-btn button button-primary" value="Fetch Active Users"/>';
         echo '<br/><small>This fetch button will fetch all users that have active subscription plan.</small>';
     }
 
@@ -407,7 +397,8 @@ class Recurly_Manager_Admin
             isset($options['recurly_manager_fetch_users_with_email']) ? esc_attr($options['recurly_manager_fetch_users_with_email']) : ''
         );
         wp_nonce_field('recurly-fetch-users-with-email-action', 'recurly-fetch-users-with-email-nonce');
-        echo '<input type="submit" name="recurly-fetch-users-with-email" class="recurly-fetch-user-btn button button-primary" value="Fetch"/>';
+        echo '<input type="submit" name="recurly-fetch-users-with-email" class="recurly-fetch-user-btn button button-primary" value="Fetch and create single User"/>';
+        echo '<br/><small>This will fetch and create user in WordPress only if the user has an active Subscription.</small>';
     }
 
     public function print_recurly_purchase_form_section_info()
